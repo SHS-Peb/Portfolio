@@ -1,7 +1,7 @@
 /* Basics here */
 * {
   box-sizing: border-box;
-  padding: 0;
+  padding: 0px;
   margin: 0;
 }
 
@@ -21,9 +21,9 @@ header {
 }
 
 h1 {
-  font-size: 4vw;
-  text-decoration: underline 5px solid #ebcccc;
-  font-family: 'Times New Roman', 'Comic Sans', 'calibri';
+  font-size: 350%;
+  text-decoration: underline 5px Solid #ebcccc;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
   color: #ebcccc;
 }
 
@@ -33,22 +33,22 @@ nav {
   background-color: #5d3648;
   overflow: hidden;
   text-align: left;
-  font-size: 3.5vw;
+  font-size: 35px;
 }
 
 nav li {
   display: inline-block;
-  text-decoration: underline 5px solid #ebcccc;
-  font-family: 'Times New Roman', 'Comic Sans', 'calibri';
-  margin-right: 2.5vw;
-  margin-top: 2.5vw;
-  margin-left: 4vw;
+  text-decoration: underline 5px Solid #ebcccc;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
+  margin-right: 50px;
+  margin-top: 74px;
+  margin-left: 80px;
 }
 
 nav a {
   color: #ebcccc;
   text-decoration: none;
-  font-size: 4.5vw;
+  font-size: 49px;
 }
 
 .avatar {
@@ -64,12 +64,13 @@ nav a {
   height: auto;
 }
 
+
 /* Headers for Main Body */
 h2 {
-  font-size: 3.5vw;
-  font-family: 'Times New Roman', 'Comic Sans', 'calibri';
+  font-size: 50px;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
   color: #000000;
-  margin-right: 5vw;
+  margin-right: 100px;
 }
 
 .header-block {
@@ -89,22 +90,24 @@ section.content {
   margin-top: 30px;
 }
 
+
 /* About Me Section */
 .blocktext {
-  font-size: 2.5vw;
+  font-size: 35px;
   color: #000000;
   margin: 0;
-  border: 0.5vw solid rgb(73, 36, 73);
-  padding: 1vw;
-  margin-bottom: 1vw;
-  margin-left: 1.4vw;
-  margin-right: 2vw;
+  border: 5px Solid rgb(73, 36, 73);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 7%;
+  margin-right: 10%;
 }
 
 .container {
-  max-width: 80%;
-  margin: 0 auto;
+max-width: 80%;
+margin: 0 auto;
 }
+
 
 /* Images and Container for Work Section */
 .grid-container {
@@ -126,7 +129,7 @@ section.content {
 
 .grid-item .top-image {
   width: 100%;
-  min-height: 25vw;
+  min-height: 380px;
 }
 
 /* trying to label */
@@ -143,7 +146,7 @@ section.content {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s;
-  z-index: 1;
+  z-index: 1; 
 }
 
 .top-image-overlay:hover img {
@@ -151,23 +154,23 @@ section.content {
 }
 
 .top-image-title {
-  font-size: 2vw;
+  font-size: 2em;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff
 }
 
 .top-image-description {
-  font-size: 1.25vw;
-  margin-top: 0.25vw;
+  font-size: 1.25em;
+  margin-top: 0.25em;
 }
 
 .grid-item img {
   width: 99%;
-  height: 5vw;
+  height: 100px;
   object-fit: cover;
-  transition: transform 0.3s;
-  margin-left: 5vw;
-  border: 0.5vw solid rgb(73, 36, 73);
+  transition: transform 0.3s; 
+  margin-left: 100px;/* You changed the margin left and it stretched */
+  border: 5px Solid rgb(73, 36, 73);
   position: relative;
   z-index: 2;
 }
@@ -180,21 +183,21 @@ section.content {
 .contact-links {
   display: flex;
   justify-content: center;
-  margin-top: 1.4vw;
-  padding-bottom: 1.75vw;
-  margin-left: 3.5vw;
+  margin-top: 20px;
+  padding-bottom: 25px;
+  margin-left: 70px;
 }
 
 .contact-links a {
   display: inline-block;
   text-decoration: none;
   color: #000000;
-  font-size: 2.5vw;
-  margin-right: 1vw;
-  margin-left: 2.5vw;
-  padding: 1vw;
-  border: 0.25vw solid #000000;
-  border-radius: 0.5vw;
+  font-size: 35px;
+  margin-right: 20px;
+  margin-left: 50px;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
 }
 
 .contact-links a:hover {
@@ -202,9 +205,9 @@ section.content {
   color: #ffffff;
 }
 
+
 /* Footer */
-.container-footer,
-h2 {
+.container-footer, h2 {
   max-width: 100%;
   margin: 0;
 }
@@ -213,10 +216,9 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #5d3648;
-  font-size: 2.5vw;
+  font-size: 30px;
 }
 
-/* Media Queries */
 @media (max-width: 767px) {
   /* Styles for small screens (e.g., smartphones) */
   h1 {
