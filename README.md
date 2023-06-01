@@ -10,9 +10,9 @@ I have created a portfolio page that allows me to display my work as I progress 
 
 ## Screenshots
 
-![Screenshot 1](./assets/images/Screenshot1.PNG)
-![Screenshot 2](./assets/images/Screenshot2.PNG)
-![Screenshot 3](./assets/images/Screenshot3.PNG)
+![Screenshot 1](./assets/Images/Screenshot1.PNG)
+![Screenshot 2](./assets/Images/Screenshot2.PNG)
+![Screenshot 3](./assets/Images/Screenshot3.PNG)
 
 
 
