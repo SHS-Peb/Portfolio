@@ -21,7 +21,7 @@ header {
 }
 
 h1 {
-  font-size: 350%;
+  font-size: 4vw;
   text-decoration: underline 5px solid #ebcccc;
   font-family: 'Times New Roman', 'Comic Sans', 'calibri';
   color: #ebcccc;
@@ -33,22 +33,22 @@ nav {
   background-color: #5d3648;
   overflow: hidden;
   text-align: left;
-  font-size: 35px;
+  font-size: 3.5vw;
 }
 
 nav li {
   display: inline-block;
   text-decoration: underline 5px solid #ebcccc;
   font-family: 'Times New Roman', 'Comic Sans', 'calibri';
-  margin-right: 50px;
-  margin-top: 74px;
-  margin-left: 80px;
+  margin-right: 2.5vw;
+  margin-top: 2.5vw;
+  margin-left: 4vw;
 }
 
 nav a {
   color: #ebcccc;
   text-decoration: none;
-  font-size: 49px;
+  font-size: 4.5vw;
 }
 
 .avatar {
@@ -66,10 +66,10 @@ nav a {
 
 /* Headers for Main Body */
 h2 {
-  font-size: 50px;
+  font-size: 3.5vw;
   font-family: 'Times New Roman', 'Comic Sans', 'calibri';
   color: #000000;
-  margin-right: 100px;
+  margin-right: 5vw;
 }
 
 .header-block {
@@ -91,14 +91,14 @@ section.content {
 
 /* About Me Section */
 .blocktext {
-  font-size: 35px;
+  font-size: 2.5vw;
   color: #000000;
   margin: 0;
-  border: 5px solid rgb(73, 36, 73);
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 7%;
-  margin-right: 10%;
+  border: 0.5vw solid rgb(73, 36, 73);
+  padding: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1.4vw;
+  margin-right: 2vw;
 }
 
 .container {
@@ -126,7 +126,7 @@ section.content {
 
 .grid-item .top-image {
   width: 100%;
-  min-height: 380px;
+  min-height: 25vw;
 }
 
 /* trying to label */
@@ -151,23 +151,23 @@ section.content {
 }
 
 .top-image-title {
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: bold;
   color: #ffffff;
 }
 
 .top-image-description {
-  font-size: 1.25em;
-  margin-top: 0.25em;
+  font-size: 1.25vw;
+  margin-top: 0.25vw;
 }
 
 .grid-item img {
   width: 99%;
-  height: 100px;
+  height: 5vw;
   object-fit: cover;
   transition: transform 0.3s;
-  margin-left: 100px; /* You changed the margin left and it stretched */
-  border: 5px solid rgb(73, 36, 73);
+  margin-left: 5vw;
+  border: 0.5vw solid rgb(73, 36, 73);
   position: relative;
   z-index: 2;
 }
@@ -180,21 +180,21 @@ section.content {
 .contact-links {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding-bottom: 25px;
-  margin-left: 70px;
+  margin-top: 1.4vw;
+  padding-bottom: 1.75vw;
+  margin-left: 3.5vw;
 }
 
 .contact-links a {
   display: inline-block;
   text-decoration: none;
   color: #000000;
-  font-size: 35px;
-  margin-right: 20px;
-  margin-left: 50px;
-  padding: 10px;
-  border: 1px solid #000000;
-  border-radius: 5px;
+  font-size: 2.5vw;
+  margin-right: 1vw;
+  margin-left: 2.5vw;
+  padding: 1vw;
+  border: 0.25vw solid #000000;
+  border-radius: 0.5vw;
 }
 
 .contact-links a:hover {
@@ -213,30 +213,30 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #5d3648;
-  font-size: 30px;
+  font-size: 2.5vw;
 }
 
 /* Media Queries */
 @media (max-width: 767px) {
   /* Styles for small screens (e.g., smartphones) */
   h1 {
-    font-size: 250%;
+    font-size: 5vw;
   }
   
   nav li {
-    margin-right: 20px;
-    margin-left: 40px;
-    margin-top: 24px;
+    margin-right: 2vw;
+    margin-left: 4vw;
+    margin-top: 2vw;
   }
   
   .avatar {
     float: none;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
   }
   
   .blocktext {
-    font-size: 30px;
+    font-size: 3vw;
   }
   
   .container {
@@ -252,22 +252,22 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium screens (e.g., tablets) */
   h1 {
-    font-size: 300%;
+    font-size: 4vw;
   }
   
   nav li {
-    margin-right: 30px;
-    margin-left: 60px;
-    margin-top: 50px;
+    margin-right: 3vw;
+    margin-left: 6vw;
+    margin-top: 5vw;
   }
   
   .avatar {
     float: none;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
   }
   
   .container {
@@ -283,15 +283,15 @@ footer {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   /* Styles for large screens (e.g., desktops) */
   h1 {
-    font-size: 350%;
+    font-size: 4.5vw;
   }
   
   nav li {
-    margin-right: 50px;
-    margin-left: 80px;
-    margin-top: 74px;
+    margin-right: 5vw;
+    margin-left: 8vw;
+    margin-top: 7.4vw;
   }
 }
