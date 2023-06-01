@@ -1,19 +1,45 @@
+/* Basics here */
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0;
 }
 
-.body {
-  background-color: rgb(109, 72, 122);
-  background-image: url(Avatar.jpg);
+html {
+  scroll-behavior: smooth;
 }
 
+.body {
+  background-color: rgb(109, 72, 122);
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  /* CSS rules specific to smaller screens */
+}
+
+/* Styles for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules specific to medium-sized screens */
+}
+
+/* Styles for screens larger than 992px */
+@media (min-width: 992px) {
+  /* CSS rules specific to larger screens */
+}
+
+/* Header and Nav Bar */
 header {
   text-align: right;
   padding: 20px;
   background-color: #5d3648;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+h1 {
+  font-size: 350%;
+  text-decoration: underline 5px Solid #ebcccc;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
   color: #ebcccc;
 }
 
@@ -26,52 +52,33 @@ nav {
   font-size: 35px;
 }
 
-nav ul {
-  list-style-type: none;
-}
-
 nav li {
   display: inline-block;
-  text-decoration: underline double 0.3px rgb(179, 157, 177);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 25px;
-  margin-right: 10px;
+  text-decoration: underline 5px Solid #ebcccc;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
+  margin-right: 50px;
+  margin-top: 74px;
+  margin-left: 80px;
 }
 
 nav a {
   color: #ebcccc;
   text-decoration: none;
+  font-size: 49px;
 }
 
-/* What is happenign here */
-p {
-  font-size: 25px;
-  color: #000000;
-  margin: 0;
-  border-style: double;
-  margin-left: 10px;
-  flex: 1 1 auto;
+.avatar {
+  float: right;
 }
 
+
+/* Headers for Main Body */
 h2 {
-  font-size: 40px;
+  font-size: 50px;
+  font-family: 'Times New Roman', 'Comic Sans','calibri';
   color: #000000;
-  margin: 0;
-  margin-right: 10px;
+  margin-right: 100px;
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #21171e;
-  font-size: 12px;
-}
-
-/* .container {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 10px;
-} */
 
 .header-block {
   flex: 0 0 50%;
@@ -79,27 +86,49 @@ footer {
   box-sizing: border-box;
 }
 
+.content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 7%;
+}
+
+section.content {
+  margin-top: 30px;
+}
+
+
+/* About Me Section */
+.blocktext {
+  font-size: 35px;
+  color: #000000;
+  margin: 0;
+  border: 5px Solid rgb(73, 36, 73);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+.container {
+max-width: 80%;
+margin: 0 auto;
+}
+
+
+/* Images and Container for Work Section */
 .grid-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
-
-/* .top-image {
-  width: 100%;
-  height: 380px;
-  flex-basis: 100%;
-} */
- 
 
 .grid-item {
   width: 50%;
-  flex-basis: 49%;
 }
 
 .top-image {
   width: 100%;
-  /* min-height: 380px; */
   flex-basis: 100%;
 }
 
@@ -112,73 +141,17 @@ footer {
   width: 99%;
   height: 100px;
   object-fit: cover;
+  transition: transform 0.3s; 
+  margin-left: 100px;/* You changed the margin left and it stretched */
+  border: 5px Solid rgb(73, 36, 73);
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-
-.blocktext {
-  font-size: 25px;
-  color: #000000;
-  margin: 0;
-  border-style: double;
-  padding: 10px;
-  margin-bottom: 10px;
+.grid-item:hover img {
+  transform: scale(1.1);
 }
 
 
-/* .container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-gap: 20px;
-  padding: 20px;
-} */
-
-.container {
-max-width: 80%;
-margin: 0 auto;
-}
-
-/* #about p, 
-#about h2{
-  display: inline-block; /* display on the same line */
-
-
-#about h2{
-  /* position: relative;
-  left: 20px; this will not work without setting position property */
-  padding: 0;
-  margin: 0;
-  color: #00cccc;
-  /* float: right; */
-}
-
-p{
-  padding: 0;
-  margin: 0;
-}
-
-#work {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.contact-header {
-  flex: 0 0 10%;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .contact-header h2 {
-  font-size: 40px;
-  color: #000000;
-  margin-right: 10px;
-} */
-
+/* Contact Me Section */
 .contact-links {
   display: flex;
   justify-content: center;
@@ -190,8 +163,9 @@ p{
   display: inline-block;
   text-decoration: none;
   color: #000000;
-  font-size: 25px;
+  font-size: 35px;
   margin-right: 20px;
+  margin-left: 50px;
   padding: 10px;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -202,22 +176,11 @@ p{
   color: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #5d3648;
+  font-size: 12px;
 }
-
-
-/* p {
-  font-size: 25px;
-  color: #000000;
-  margin: 0;
-  border-style: double;
-  margin-left: 10px;
-  flex: 1 1 auto;
-}
-
-h2 {
-  font-size: 40px;
-  color: #000000;
-  margin: 0;
-  margin-right: 10px; */
