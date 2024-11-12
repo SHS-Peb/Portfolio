@@ -1,7 +1,7 @@
 /* Basics here */
 * {
   box-sizing: border-box;
-  padding: 0px;
+  padding: 0;
   margin: 0;
 }
 
@@ -14,49 +14,28 @@ body {
 }
 
 /* Header and Nav Bar */
-header {
-  text-align: right;
-  padding: 20px;
+header, nav {
   background-color: #5d3648;
-}
-
-h1 {
-  font-size: 350%;
-  text-decoration: underline 5px Solid #ebcccc;
-  font-family: 'Times New Roman', 'Comic Sans','calibri';
-  color: #ebcccc;
+  font-family: 'Times New Roman', 'Comic Sans', 'calibri';
 }
 
 nav {
-  padding-top: 15px;
-  margin-right: 20px;
-  background-color: #5d3648;
   overflow: hidden;
-  text-align: left;
+  text-align: center;
   font-size: 35px;
+  padding-bottom: 25px;
+  margin-top: 0;
 }
 
 nav li {
   display: inline-block;
-  text-decoration: underline 5px Solid #ebcccc;
-  font-family: 'Times New Roman', 'Comic Sans','calibri';
-  margin-right: 50px;
-  margin-top: 74px;
-  margin-left: 80px;
 }
 
 nav a {
   color: #ebcccc;
   text-decoration: none;
-  font-size: 49px;
-}
-
-.avatar {
-  float: right;
-}
-
-.moon-container {
-  width: 100%;
+  font-size: 35px;
+  text-decoration: underline 2px solid #ebcccc;
 }
 
 .moon-container img {
@@ -64,75 +43,64 @@ nav a {
   height: auto;
 }
 
-
 /* Headers for Main Body */
 h2 {
   font-size: 50px;
-  font-family: 'Times New Roman', 'Comic Sans','calibri';
-  color: #000000;
+  color: #000;
   margin-right: 100px;
 }
 
-.header-block {
-  flex: 0 0 50%;
+.header-block, .container, .container-footer {
+  max-width: 80%;
   padding: 20px;
-  box-sizing: border-box;
+}
+
+.container-footer, .container {
+  max-width: 100%;
 }
 
 .content {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 30px 100px 10px;
   padding-top: 7%;
 }
 
-section.content {
-  margin-top: 30px;
-}
-
-
 /* About Me Section */
 .blocktext {
-  font-size: 35px;
-  color: #000000;
-  margin: 0;
-  border: 5px Solid rgb(73, 36, 73);
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 7%;
-  margin-right: 10%;
+  font-size: 30px;
+  color: #000;
+  border: 5px solid rgb(73, 36, 73);
+  padding: 10px;;
 }
-
-.container {
-max-width: 80%;
-margin: 0 auto;
-}
-
 
 /* Images and Container for Work Section */
 .grid-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .grid-item {
+  flex: 1 1 48%;
   position: relative;
-  width: 50%;
+  max-width: 48%;
+  transition: transform 0.3s;
 }
 
-.top-image {
-  position: relative;
+.grid-item img {
   width: 100%;
-  flex-basis: 100%;
+  object-fit: cover;
+  border: 5px solid rgb(73, 36, 73);
+  transition: transform 0.3s;
+  z-index: 2;
 }
 
-.grid-item .top-image {
-  width: 100%;
-  min-height: 380px;
+.grid-item:hover img {
+  transform: scale(1.1);
 }
 
-/* trying to label */
 .top-image-overlay {
   position: absolute;
   top: 0;
@@ -146,17 +114,20 @@ margin: 0 auto;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s;
-  z-index: 1; 
+  z-index: 1;
 }
 
-.top-image-overlay:hover img {
+.grid-item:hover .top-image-overlay {
   opacity: 1;
+}
+
+.top-image-title, .top-image-description {
+  color: #fff;
 }
 
 .top-image-title {
   font-size: 2em;
   font-weight: bold;
-  color: #ffffff
 }
 
 .top-image-description {
@@ -164,136 +135,95 @@ margin: 0 auto;
   margin-top: 0.25em;
 }
 
-.grid-item img {
-  width: 99%;
-  height: 100px;
-  object-fit: cover;
-  transition: transform 0.3s; 
-  margin-left: 100px;/* You changed the margin left and it stretched */
-  border: 5px Solid rgb(73, 36, 73);
-  position: relative;
-  z-index: 2;
-}
-
-.grid-item:hover img {
-  transform: scale(1.1);
-}
-
 /* Contact Me Section */
 .contact-links {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  padding-bottom: 25px;
-  margin-left: 70px;
+  margin: 20px 70px 25px;
 }
 
 .contact-links a {
-  display: inline-block;
-  text-decoration: none;
-  color: #000000;
+  color: #000;
   font-size: 35px;
-  margin-right: 20px;
-  margin-left: 50px;
+  margin: 0 50px 0 20px;
   padding: 10px;
-  border: 1px solid #000000;
+  border: 1px solid #000;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .contact-links a:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
 }
-
 
 /* Footer */
-.container-footer, h2 {
-  max-width: 100%;
-  margin: 0;
-}
-
 footer {
-  text-align: center;
-  padding: 20px;
+  text-align: left;
   background-color: #5d3648;
-  font-size: 30px;
 }
 
+.h2-footer{
+  font-size: 25px
+}
+
+/* Responsive Styles */
 @media (max-width: 767px) {
-  /* Styles for small screens (e.g., smartphones) */
   h1 {
     font-size: 5vw;
   }
-  
+
   nav li {
-    margin-right: 2vw;
-    margin-left: 4vw;
-    margin-top: 2vw;
+    margin: 2vw 2vw 0 4vw;
   }
-  
-  .avatar {
-    float: none;
-    text-align: center;
-    margin-bottom: 2vw;
-  }
-  
+
   .blocktext {
     font-size: 3vw;
   }
-  
+
   .container {
     max-width: 90%;
   }
-  
+
   .grid-item {
     width: 100%;
   }
-  
+
   .top-image-overlay {
     display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Styles for medium screens (e.g., tablets) */
   h1 {
     font-size: 4vw;
   }
-  
+
   nav li {
-    margin-right: 3vw;
-    margin-left: 6vw;
-    margin-top: 5vw;
+    margin: 5vw 3vw 0 6vw;
   }
-  
-  .avatar {
+
+  .avatar, .container {
     float: none;
     text-align: center;
-    margin-bottom: 2vw;
-  }
-  
-  .container {
     max-width: 85%;
   }
-  
+
   .grid-item {
     width: 100%;
   }
-  
+
   .top-image-overlay {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
-  /* Styles for large screens (e.g., desktops) */
   h1 {
     font-size: 4.5vw;
   }
-  
+
   nav li {
-    margin-right: 5vw;
-    margin-left: 8vw;
-    margin-top: 7.4vw;
+    margin: 2vw 5vw 0 8vw;
   }
 }
